@@ -192,6 +192,7 @@ $(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-l
 -include vendor/aosp/config/BoardConfigReservedSize.mk
 
 BOARD_EROFS_COMPRESSOR := lz4hc,9
+BOARD_EROFS_PCLUSTER_SIZE := 65536
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
