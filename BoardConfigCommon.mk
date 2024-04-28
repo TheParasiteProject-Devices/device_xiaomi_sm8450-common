@@ -9,6 +9,13 @@ include vendor/xiaomi/sm8450-common/BoardConfigVendor.mk
 
 COMMON_PATH := device/xiaomi/sm8450-common
 
+# Mainline
+include build/make/target/board/BoardConfigMainlineCommon.mk
+TARGET_USERIMAGES_USE_EXT4 := false
+TARGET_NO_RECOVERY := false
+TARGET_LMKD_STATS_LOG := false
+BOARD_AVB_ROLLBACK_INDEX := 0
+
 TARGET_BUILD_FULLY_SIGN := true
 include vendor/parasite/signatures/BoardConfigSign.mk
 
