@@ -338,6 +338,11 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi
 
+# Sound Dose
+PRODUCT_PACKAGES += \
+    android.hardware.audio.sounddose-vendor-impl \
+    audio_sounddose_aoc
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
